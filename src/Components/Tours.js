@@ -6,16 +6,8 @@ const Tours = () => {
       <Title title="featured" subTitle="tours" />
       <div className="section-center featured-center">
         {tours.map((tour) => {
-          const {
-            id,
-            img,
-            title,
-            description,
-            destination,
-            date,
-            length,
-            price,
-          } = tour;
+          const { img, title, description, destination, date, length, price } =
+            tour;
           return (
             <article className="tour-card">
               <div className="tour-img-container">
